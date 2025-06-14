@@ -1,6 +1,7 @@
 # Zeptoh Form Fields Encrypt and Decrypt Task
 
-[[#Zeptoh Form Fields Encrypt and Decrypt Task]]
+1. [Backend Implementation](#backend-implementation)
+2. [Frontend Implementation](#frontend-implementation)
 
 ## Backend Implementation
 
