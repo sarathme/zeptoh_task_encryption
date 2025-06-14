@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const { encryptField } = require("./encryptField");
 
 const app = express();
@@ -6,8 +7,9 @@ const app = express();
 // Middleware to parse request body
 
 app.use(express.json());
+app.use(cors());
 
-const fields = ["email:text", "name:text", "don't_work"];
+const fields = ["email:text", "name:text", "don't_work", "age:number"];
 
 app.get("/api/form", (req, res) => {
   const encryptedArr = fields.map((field) => encryptField(field));
